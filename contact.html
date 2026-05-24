@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Kandy Medical Representatives Association (KMRA)</title>
+  <meta name="description" content="Get in touch with KMRA. Contact the President, Secretary, or Treasurer directly, or submit a general inquiry using our online form. Located in Kandy, Sri Lanka.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Banner -->
+  <div class="announcement-banner">
+    <span><i class="fa-solid fa-bullhorn"></i> Member Registration is now OPEN for 2026!</span>
+    <a href="register.html">Join us today <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <!-- Global Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" id="headerLogo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-house-chimney-medical"></i>
+        </div>
+        <div class="logo-text">KMRA<span>.lk</span></div>
+      </a>
+
+      <!-- Desktop & Mobile Menu -->
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="committee.html">Committee</a></li>
+          <li><a href="csr.html">CSR Activities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="conduct.html">Code of Conduct</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="register.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.9rem;">Register 2026</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title Banner -->
+  <section class="section section-bg" style="padding: 4rem 0; border-bottom: 1px solid var(--neutral-border);">
+    <div class="container text-center reveal">
+      <h1 class="section-title">Contact Us</h1>
+      <p class="section-subtitle" style="margin-bottom: 0;">Have a question or looking to collaborate? Reach out to us directly or drop a message below.</p>
+    </div>
+  </section>
+
+  <!-- Contact Body (Sidebar + Inquiry Form) -->
+  <section class="section">
+    <div class="container contact-layout">
+      <!-- Direct Contacts Panel (Sidebar) -->
+      <div class="contacts-sidebar reveal">
+        <h2 class="section-title align-left" style="font-size: 1.75rem; margin-bottom: 1.5rem;">Official Contacts</h2>
+        <p style="color: var(--neutral-slate-medium); margin-bottom: 2rem;">For immediate or administrative inquiries, feel free to contact the key committee officers directly.</p>
+
+        <!-- President Direct Contact -->
+        <div class="contact-card-executive">
+          <h4>Mr. Rohan Perera</h4>
+          <span class="c-role">Association President</span>
+          <ul class="contact-details-list">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+94812345671">+94 81 234 5671</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:president@kmra.lk">president@kmra.lk</a></li>
+          </ul>
+        </div>
+
+        <!-- Secretary Direct Contact -->
+        <div class="contact-card-executive">
+          <h4>Mrs. Sanduni Senanayake</h4>
+          <span class="c-role">Association Secretary</span>
+          <ul class="contact-details-list">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+94812345672">+94 81 234 5672</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:secretary@kmra.lk">secretary@kmra.lk</a></li>
+          </ul>
+        </div>
+
+        <!-- Treasurer Direct Contact -->
+        <div class="contact-card-executive">
+          <h4>Mr. Samantha Wijesinghe</h4>
+          <span class="c-role">Association Treasurer</span>
+          <ul class="contact-details-list">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+94812345673">+94 81 234 5673</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:treasurer@kmra.lk">treasurer@kmra.lk</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- General Inquiry Form -->
+      <div class="inquiry-form-card reveal" style="transition-delay: 0.15s;">
+        <h3>General Inquiry</h3>
+        <p style="color: var(--neutral-slate-medium); margin-bottom: 2rem;">Fill out the form below, and our administration team will review and respond to your inquiry within 48 hours.</p>
+
+        <form id="inquiryForm" novalidate>
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" class="form-control" placeholder="E.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email *</label>
+              <input type="email" id="email" class="form-control" placeholder="E.g. john@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-control" placeholder="E.g. +94 77 123 4567">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" class="form-control" placeholder="E.g. Sponsorship Query" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" class="form-control" placeholder="Please write your detailed inquiry here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry <i class="fa-solid fa-paper-plane" style="margin-left: 0.5rem;"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="container reveal">
+      <div class="map-section-wrapper">
+        <div class="map-container">
+          <!-- Real responsive map iframe centering on Kandy, Sri Lanka -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63320.43020658428!2d80.60302484863283!3d7.290571500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662d87305d1d%3A0x81104b41334c97c2!2sKandy!5e0!3m2!1sen!2slk!4v1716500000000!5m2!1sen!2slk" 
+            title="Map of Kandy, Sri Lanka"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-house-chimney-medical"></i>
+          </div>
+          <div class="logo-text">KMRA<span>.lk</span></div>
+        </a>
+        <p>The Kandy Medical Representatives Association (KMRA) is the premier professional guild in Kandy, Sri Lanka, supporting career advancement and ethical healthcare engagement since 2002.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">Our History</a></li>
+          <li><a href="committee.html">Executive Committee</a></li>
+          <li><a href="csr.html">CSR Initiatives</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-links">
+          <li><a href="register.html">Registration Form</a></li>
+          <li><a href="conduct.html">Code of Conduct</a></li>
+          <li><a href="gallery.html">Event Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p>Subscribe to receive news, event reminders, and medical industry updates from KMRA.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Kandy Medical Representatives Association. All Rights Reserved.</p>
+      <div class="designer-credit">
+        Designed by <a href="https://zyntec.lk" target="_blank" rel="noopener noreferrer">zyntec.lk</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
